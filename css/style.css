@@ -162,8 +162,15 @@ p {
     background-color: #7e7e7e;
 }
 
-dd {
-    display: inline-block;
+.social_networks_list {
+    margin: 0;
+    padding: 4px;
+}
+
+.social_networks_list li {
+    display: inline;
+    margin: 0;
+    padding: 4px;
 }
 
 address {
