@@ -1,16 +1,9 @@
-@font-face {
-    font-family: ArialRegular;
-    src: url("/fonts/ArialRegular/ArialRegular.eot");
-    src: url("/fonts/ArialRegular/ArialRegular.eot?#iefix") format("embedded-opentype"),
-    url("/fonts/ArialRegular/ArialRegular.woff") format("woff"),
-    url("/fonts/ArialRegular/ArialRegular.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto:wght@300&display=swap');
 
 header {
     width: 100%;
-    font-family: "SansSerif", serif;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
 }
 
@@ -50,7 +43,7 @@ div.logo {
     display: inline-block;
     padding: 10px 20px;
     color: black;
-    font-family: ArialRegular, serif;
+    font-family: 'PT Sans', sans-serif;
     font-weight: normal;
     background-color: white;
     border-bottom: 0.5vh solid rgb(128, 128, 128);
@@ -71,7 +64,7 @@ article h3 {
 p {
     font-size: 1em;
     line-height: 1.2em;
-    font-family: ArialRegular, serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: normal;
     text-align: left;
     color: black;
