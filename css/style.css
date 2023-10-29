@@ -153,6 +153,8 @@ p {
 .social_networks_list {
     margin: 0;
     padding: 4px;
+    position: absolute;
+    right: 10%;
 }
 
 .social_networks_list li {
