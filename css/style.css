@@ -42,7 +42,7 @@ div.logo {
     text-decoration: none;
     display: inline-block;
     padding: 10px 20px;
-    color: black;
+    color: cornflowerblue;
     font-family: 'PT Sans', sans-serif;
     font-weight: 550;
     font-size: 1.4em;
@@ -52,6 +52,11 @@ div.logo {
 
 .nav_bar li a:hover {
     background-color: darkgray;
+}
+
+nav ul li a.active {
+    text-decoration: underline;
+    color: black;
 }
 
 a {
@@ -150,8 +155,7 @@ p {
 
 .social_networks_list {
     padding: 4px;
-    position: absolute;
-    right: 10%;
+    margin-top: 0;
 }
 
 .social_networks_list li {
@@ -163,6 +167,7 @@ p {
 address {
     font-weight: 300;
     font-style: normal;
+    float:left;
 }
 
 footer {
@@ -248,4 +253,20 @@ td {
 
 tr:nth-child(even) td {
     background: #f8f6ff;
+}
+
+.clock {
+    position: absolute;
+    right: 10%;
+    font-size: 2.5em;
+    color: brown;
+    float:right;
+}
+
+.clock ul {
+    margin-bottom: 0;
+}
+
+.clock ul li {
+    display: inline;
 }
