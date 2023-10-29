@@ -79,8 +79,6 @@ p {
     filter: drop-shadow(12px 12px 12px rgba(0,0,0,0.3));
 }
 
-
-
 .navigating_img {
     position: relative;
     color: white;
@@ -151,7 +149,6 @@ p {
 }
 
 .social_networks_list {
-    background-color: #1b1364;
     padding: 4px;
     position: absolute;
     right: 10%;
@@ -200,44 +197,6 @@ footer {
     body {
         max-width: 90%;
     }
-
-}
-
-.grid_table {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(50px, 1fr));
-    grid-gap: 1vw;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    max-width: 900px;
-    text-align: left;
-    align-items: normal;
-}
-
-.table_head_column {
-}
-
-.table_column {
-    grid-template-rows: 25%;
-}
-
-.grid_table_head {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1em;
-    background-color: darkgray;
-}
-
-.grid_table_price_per_category {
-    font-family: 'PT Sans', sans-serif;
-    font-size: 1em;
-}
-
-.grid_table_price_per_category:nth-child(even) {
-    background-color: rgba(250, 235, 215, 0.68);
-}
-
-.grid_table_price_per_category:nth-child(odd) {
-    background-color: rgba(127, 255, 212, 0.21);
 }
 
 table {
