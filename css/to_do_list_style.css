@@ -1,0 +1,87 @@
+.to_do_list {
+    width: 80%;
+    max-width: 540px;
+    background-color: rgba(82, 87, 210, 0.3);
+    padding: 10px 20px;
+    margin: 50px 10px 20px;
+    border-radius: 20px;
+}
+
+#task_list {
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+#task_list li {
+    display: flex;
+    list-style: none;
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+.task_title--done {
+    color: #7e7e7e;
+    text-decoration: line-through;
+}
+
+#to_do_list_form {
+    display: flex;
+    align-items: center;
+    background: rgba(82, 87, 210, 0.4);
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    font-size: 1rem;
+}
+
+#to_do_list_form input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px 30px;
+    font-size: 1rem;
+}
+
+#to_do_list_form button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding:  15px 30px;
+    background: #fd6653;
+    color: white;
+    border-radius: 30px;
+}
+
+.list_item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.task_item_buttons {
+    display: flex;
+}
+
+.btn-action img {
+    pointer-events: none;
+}
+
+.to_do_list button {
+    background-color: rgba(82, 87, 210, 0.6);
+    padding: 8px;
+    cursor: pointer;
+    border: 0;
+
+    border-radius: 20px;
+    transition: opacity 0.2s ease-in;
+    opacity: 0.7;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.to_do_list button:hover {
+    background-color: rgba(82, 87, 210, 0.6);
+    opacity: 1;
+}
