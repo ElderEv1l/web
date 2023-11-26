@@ -1,10 +1,12 @@
-$(document).ready(function(){
-    let str = location.pathname.split("/").pop()
+document.addEventListener("DOMContentLoaded", function() {
+    let currentPageName = document.location.href;
+    const menuLinks = document.querySelectorAll('.nav_bar li a');
 
-    if (str === '') {
-        str = 'index.html';
+    if (menuLinks){
+        menuLinks.forEach(function(link) {
+            if (link.href === currentPageName) {
+                link.classList.add('active');
+            }
+        });
     }
-
-    let target = $('nav li a[href="'+str+'"]');
-    target.addClass('active');
 });

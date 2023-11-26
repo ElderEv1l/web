@@ -1,4 +1,4 @@
-window.onload = function() {
+window.addEventListener("load", function () {
     setInterval(function() {
         // Seconds
         let seconds = new Date().getSeconds();
@@ -12,4 +12,4 @@ window.onload = function() {
         let hours = new Date().getHours();
         document.getElementById("hours").innerHTML = (hours < 10 ? '0' : '') + hours;
     }, 1000);
-}
+});
