@@ -7,22 +7,12 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function addTask(task){
-    let listContainer = document.getElementById("task_list")
-    let li = document.createElement("li")
-    li.className = "list_item";
+    const listContainer = document.getElementById('task_list');
+    const template = document.getElementById('list_item_template');
+    const clone = document.importNode(template.content, true)
 
-    li.innerHTML = `
-        <span class="task_title">` + task + `</span>
-        <div class="task_item_buttons">
-            <button type="button" data-action="done" class="btn-action">
-                <img src="./images/to_do_list/done.svg" alt="Done" width="18" height="18">
-            </button>
-    
-            <button type="button" data-action="delete" class="btn-action">
-                <img src="./images/to_do_list/bin.svg" alt="Delete" width="18" height="18">
-            </button>
-        </div>`;
-    listContainer.appendChild(li);
+    clone.querySelector('span').textContent = task;
+    listContainer.appendChild(clone);
 }
 
 function deleteTask(event) {
@@ -45,7 +35,7 @@ function doneTask(event) {
 }
 
 function getFormFeedback() {
-    let form = document.querySelector('#to_do_list_form')
+    let form = document.getElementById('to_do_list_form')
 
     if (form) {
         form.addEventListener('submit', function (event) {

@@ -12,15 +12,11 @@
     <meta name="description" lang="ru" content="Закажите Картину у Нас!">
     <meta name="keywords" lang="ru" content="магазин, картины, творчество, художник">
 
-    <script
-            src="https://code.jquery.com/jquery-3.7.1.js"
-            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-            crossorigin="anonymous"></script>
-
     <script src="./scripts/time.js"></script>
     <script src="./scripts/load_time.js"></script>
     <script src="./scripts/active_page.js"></script>
     <script src="./scripts/to_do_list_script.js"></script>
+    <script src="scripts/fetchapi.js"></script>
 </head>
 
 <body>
@@ -86,6 +82,21 @@
             </li>
         </ul>
 
+        <template id="list_item_template">
+            <li class="list_item">
+                <span class="task_title"></span>
+                <div class="task_item_buttons">
+                    <button type="button" data-action="done" class="btn-action">
+                        <img src="./images/to_do_list/done.svg" alt="Done" width="18" height="18">
+                    </button>
+
+                    <button type="button" data-action="delete" class="btn-action">
+                        <img src="./images/to_do_list/bin.svg" alt="Delete" width="18" height="18">
+                    </button>
+                </div>
+            </li>
+        </template>
+
         <div>
             <div>
                 <form id="to_do_list_form" autocomplete="off">
@@ -97,6 +108,15 @@
         </div>
     </article>
 
+    <div id="fetchData">
+        <button id="fetchButton">Oooh yeeeah</button>
+
+        <div id="preload">
+            <img src="images/gif/shigure-ui-dance.gif" alt="dance dance dance" width=498>
+        </div>
+
+        <img id="data" src="" alt="">
+    </div>
 
     <h2>Контакты</h2>
     <article>

@@ -270,3 +270,32 @@ tr:nth-child(even) td {
 .clock ul li {
     display: inline;
 }
+
+#fetchButton {
+    background-color: white;
+    transition: background-color 0.2s ease-in;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+#fetchButton:hover {
+    background: #a6a6a6;
+}
+
+#preload {
+    width: 498px;
+    height: 395px;
+    padding: 30px;
+    display: none;
+}
+
+#data {
+    display: none;
+    max-width: 498px;
+    max-height: 395px;
+}
