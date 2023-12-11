@@ -145,6 +145,10 @@ function loadFromLocal() {
     listContainer.innerHTML = '';
     const template = document.getElementById('list_item_template');
 
+    if (localStorage.getItem("data") === null) {
+        localStorage.setItem('data', JSON.stringify([]));
+    }
+
     let tasks = JSON.parse(localStorage.getItem('data'));
     tasks.forEach((task) => {
         let clone = document.importNode(template.content, true);
