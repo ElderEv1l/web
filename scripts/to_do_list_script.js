@@ -145,7 +145,7 @@ function loadFromLocal() {
     listContainer.innerHTML = '';
     const template = document.getElementById('list_item_template');
 
-    if (localStorage.getItem("data") === null) {
+    if (localStorage.getItem('data') === null) {
         localStorage.setItem('data', JSON.stringify([]));
     }
 
