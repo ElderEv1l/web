@@ -324,4 +324,5 @@ tr:nth-child(even) td {
 
 .swiper-button-prev, .swiper-button-next {
     color: cornflowerblue;
+    opacity: 0;
 }
